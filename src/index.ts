@@ -8,7 +8,7 @@ const OfflinePlugin = require('offline-plugin')
  * 
  * See: https://github.com/NekR/offline-plugin
  */
-export = function offline({options}:{options?:any}) {
+export = function offline({options}:{options?:any} = {}) {
   return function offline(this: WebpackConfig): WebpackConfig {
     return {
       plugins: get(this, 'plugins', []).concat([
