@@ -1,4 +1,4 @@
-import {WebpackConfig, get} from '@easy-webpack/core'
+import {WebpackConfigWithMetadata, get} from '@easy-webpack/core'
 const OfflinePlugin = require('offline-plugin')
 
 /**
@@ -9,7 +9,7 @@ const OfflinePlugin = require('offline-plugin')
  * See: https://github.com/NekR/offline-plugin
  */
 export = function offline({options}:{options?:any} = {}) {
-  return function offline(this: WebpackConfig): WebpackConfig {
+  return function offline(this: WebpackConfigWithMetadata): WebpackConfigWithMetadata {
     return {
       plugins: get(this, 'plugins', []).concat([
         new OfflinePlugin(options),
