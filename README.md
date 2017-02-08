@@ -1,4 +1,6 @@
 # @easy-webpack/config-offline
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/easy-webpack/config-offline.svg)](https://greenkeeper.io/)
 Enable offline capability of your webapp using [ServiceWorker](https://developer.mozilla.org/en/docs/Web/API/Service_Worker_API) or [AppCache](https://developer.mozilla.org/en-US/docs/Web/HTML/Using_the_application_cache).
 
 This config use [offline-plugin](https://github.com/NekR/offline-plugin) to achieve generation of ServiceWorker and AppCache files.
